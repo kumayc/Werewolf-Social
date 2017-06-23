@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		43BB93781EFC61E6005A7AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB93771EFC61E6005A7AE1 /* AppDelegate.swift */; };
-		43BB937A1EFC61E6005A7AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB93791EFC61E6005A7AE1 /* ViewController.swift */; };
+		43BB937A1EFC61E6005A7AE1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB93791EFC61E6005A7AE1 /* SignInVC.swift */; };
 		43BB937D1EFC61E6005A7AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BB937B1EFC61E6005A7AE1 /* Main.storyboard */; };
 		43BB937F1EFC61E6005A7AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BB937E1EFC61E6005A7AE1 /* Assets.xcassets */; };
 		43BB93821EFC61E6005A7AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BB93801EFC61E6005A7AE1 /* LaunchScreen.storyboard */; };
+		43BB938A1EFC62D3005A7AE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BB93891EFC62D3005A7AE1 /* GoogleService-Info.plist */; };
+		B77F4312DEFA751F9C6F9C5C /* Pods_Werewolf_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41897E80F011BE6E3E8A33BE /* Pods_Werewolf_Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41897E80F011BE6E3E8A33BE /* Pods_Werewolf_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Werewolf_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BB93741EFC61E6005A7AE1 /* Werewolf Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Werewolf Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BB93771EFC61E6005A7AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43BB93791EFC61E6005A7AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43BB93791EFC61E6005A7AE1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		43BB937C1EFC61E6005A7AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43BB937E1EFC61E6005A7AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BB93811EFC61E6005A7AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43BB93831EFC61E6005A7AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BB93891EFC62D3005A7AE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49A41DE6F1E1CDF06A33F1D7 /* Pods-Werewolf Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Werewolf Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Werewolf Social/Pods-Werewolf Social.debug.xcconfig"; sourceTree = "<group>"; };
+		A4F45991F34FC1F62DB5879F /* Pods-Werewolf Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Werewolf Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Werewolf Social/Pods-Werewolf Social.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77F4312DEFA751F9C6F9C5C /* Pods_Werewolf_Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				43BB93761EFC61E6005A7AE1 /* Werewolf Social */,
 				43BB93751EFC61E6005A7AE1 /* Products */,
+				F851C26BC65C0086948C5E19 /* Pods */,
+				5F12D0F7BCEF4A852C2B30C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		43BB93761EFC61E6005A7AE1 /* Werewolf Social */ = {
 			isa = PBXGroup;
 			children = (
+				43BC1FE11EFC6AEF000B333A /* Model */,
+				43BC1FE31EFC6B11000B333A /* Controller */,
+				43BC1FE21EFC6B0A000B333A /* View */,
 				43BB93771EFC61E6005A7AE1 /* AppDelegate.swift */,
-				43BB93791EFC61E6005A7AE1 /* ViewController.swift */,
 				43BB937B1EFC61E6005A7AE1 /* Main.storyboard */,
 				43BB937E1EFC61E6005A7AE1 /* Assets.xcassets */,
 				43BB93801EFC61E6005A7AE1 /* LaunchScreen.storyboard */,
 				43BB93831EFC61E6005A7AE1 /* Info.plist */,
+				43BB93891EFC62D3005A7AE1 /* GoogleService-Info.plist */,
 			);
 			path = "Werewolf Social";
+			sourceTree = "<group>";
+		};
+		43BC1FE11EFC6AEF000B333A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		43BC1FE21EFC6B0A000B333A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		43BC1FE31EFC6B11000B333A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43BB93791EFC61E6005A7AE1 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5F12D0F7BCEF4A852C2B30C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41897E80F011BE6E3E8A33BE /* Pods_Werewolf_Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F851C26BC65C0086948C5E19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49A41DE6F1E1CDF06A33F1D7 /* Pods-Werewolf Social.debug.xcconfig */,
+				A4F45991F34FC1F62DB5879F /* Pods-Werewolf Social.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43BB93861EFC61E6005A7AE1 /* Build configuration list for PBXNativeTarget "Werewolf Social" */;
 			buildPhases = (
+				F3A099C60160048BADD7013B /* [CP] Check Pods Manifest.lock */,
 				43BB93701EFC61E6005A7AE1 /* Sources */,
 				43BB93711EFC61E6005A7AE1 /* Frameworks */,
 				43BB93721EFC61E6005A7AE1 /* Resources */,
+				C078AB1B95B28D91C8522160 /* [CP] Embed Pods Frameworks */,
+				8D26E9DD6EACDEE18794E738 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43BB93821EFC61E6005A7AE1 /* LaunchScreen.storyboard in Resources */,
+				43BB938A1EFC62D3005A7AE1 /* GoogleService-Info.plist in Resources */,
 				43BB937F1EFC61E6005A7AE1 /* Assets.xcassets in Resources */,
 				43BB937D1EFC61E6005A7AE1 /* Main.storyboard in Resources */,
 			);
@@ -131,12 +186,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D26E9DD6EACDEE18794E738 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Werewolf Social/Pods-Werewolf Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C078AB1B95B28D91C8522160 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Werewolf Social/Pods-Werewolf Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3A099C60160048BADD7013B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43BB93701EFC61E6005A7AE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43BB937A1EFC61E6005A7AE1 /* ViewController.swift in Sources */,
+				43BB937A1EFC61E6005A7AE1 /* SignInVC.swift in Sources */,
 				43BB93781EFC61E6005A7AE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +361,7 @@
 		};
 		43BB93871EFC61E6005A7AE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A41DE6F1E1CDF06A33F1D7 /* Pods-Werewolf Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Werewolf Social/Info.plist";
@@ -270,6 +374,7 @@
 		};
 		43BB93881EFC61E6005A7AE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F45991F34FC1F62DB5879F /* Pods-Werewolf Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Werewolf Social/Info.plist";
@@ -299,6 +404,7 @@
 				43BB93881EFC61E6005A7AE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

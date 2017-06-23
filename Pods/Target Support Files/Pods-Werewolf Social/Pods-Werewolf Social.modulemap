@@ -1,0 +1,6 @@
+framework module Pods_Werewolf_Social {
+  umbrella header "Pods-Werewolf Social-umbrella.h"
+
+  export *
+  module * { export * }
+}
